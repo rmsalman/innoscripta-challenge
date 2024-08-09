@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+#filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-group input, .filter-group select, .filter-group button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-group button:hover {
+  background-color: #0056b3;
+}
+
+.filterButton {
+  display: flex;align-items: flex-end;padding-bottom: 4px;
+}
+
+.articles-list {
+  margin-top: 20px;
+}
+
+.article-item {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.article-item:last-child {
+  border-bottom: none;
+}
+
+.article-title a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  #filter-form {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .filter-group {
+      flex: 1 1 auto;
+  }
+
+  .filter-group input, .filter-group select, .filter-group button {
+      font-size: 14px;
+      padding: 6px;
+  }
+
+  .article-title a {
+      font-size: 18px;
+  }
+}
